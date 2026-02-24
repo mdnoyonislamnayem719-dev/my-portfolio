@@ -1,0 +1,177 @@
+# my-portfolio
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ing Shaa Allah, I will be a Freelancer</title>
+   <style>
+     body {
+       background-color: #1a1a2e;
+       text-align: center;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Sans-Serif;
+       color: white;
+     }
+     h1 {
+       color: #e94560;
+       margin-top: 50px;
+       font-size: 32px;
+     }
+     p {
+       color: #00d2ff;
+       font-size: 22px;
+       font-style: italic;
+     }
+     img {
+       width: 180px;
+       height: 180px;
+       border-radius: 50%;
+       border: 4px solid #00d2ff;
+       margin-top: 20px;
+       object-fit: cover;
+     }
+             .wa-button {
+            display: inline-block;
+            background-color: #25D366; 
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: 0.3s;
+        }
+        .wa-button:hover {
+            transform: scale(1.1);
+            background-color: #128C7E;
+        }
+                @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .wa-button {
+            animation: heartbeat 1.1s infinite;
+        }
+                .social-links {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+        }
+        .s-link {
+            color: #00d2ff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: 0.4s;
+        }
+        .s-link:hover {
+            color: #e94560;
+            text-shadow: 0 0 10px #e94560;
+        }
+                .bismillah {
+            font-size: 24px;
+            color: #00d2ff;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        img {
+            box-shadow: 0 0 15px #00d2ff;
+            animation: imageGlow 2s infinite alternate;
+        }
+        @keyframes imageGlow {
+            from { box-shadow: 0 0 10px #00d2ff; }
+            to { box-shadow: 0 0 25px #00d2ff, 0 0 35px #00d2ff; }
+        }
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            body {
+    overflow-x: hidden;
+}
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #888;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+        }
+                body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: rgba(0, 210, 255, 0.5);
+            z-index: 1000;
+            animation: scan 4s linear infinite;
+        }
+        @keyframes scan {
+            0% { top: 0; }
+            100% { top: 100%; }
+        }
+                @media (max-width: 600px) {
+            h1 { font-size: 22px; }
+            .bismillah { font-size: 18px; }
+            img { width: 120px; height: 120px; }
+            .wa-button { padding: 10px 20px; font-size: 14px; }
+        }
+        .typing-text {
+    display: block;
+    overflow: hidden;
+    border-right: 3px solid #00d2ff;
+    margin: 10px auto;
+    letter-spacing: 1px;
+    font-size: 16px;
+    width: fit-content;
+    white-space: normal;
+    animation: blink-caret .75s step-end infinite;
+}
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #00d2ff; }
+        }
+      }
+   </style>
+</head>
+<body>
+  <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+  <h1 style="text-shadow: 2px 2px #ff0055, -2px -2px #00d2ff;">My Mission: Halal Freelancing & Security</h1>
+  <img src="pro.jpg" alt="Mission Image">
+  <a href="https://wa.me/qr/HFZQHPFK77G4O1" class="wa-button">WhatsApp Me</a>
+  <div style="display: flex; justify-content: center;">
+    <p class="typing-text">Step by step, Allah will make it easy for me.</p>
+</div>
+  <div class="social-links">
+    <p>Find me on:</p>
+    <a href="https://www.facebook.com/share/189Nu82NPS/" class="s-link facebook">Facebook</a>
+    <a href="https://www.linkedin.com/in/naimul-islam-426995324?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="s-link linkedin">LinkedIn</a>
+    <a href="https://youtube.com/@hqnayeem?si=ehjtbSO-iEtY3v-T" class="s-link youtube">YouTube</a>
+</div>
+    <footer class="footer">
+        <p>© 2026 | Developed by Naimul Islam Nayeem</p>
+        <p style="font-style: italic; color: #00d2ff;">Seeking Barakah in every Byte</p>
+    </footer>
+</body>
+</html>
