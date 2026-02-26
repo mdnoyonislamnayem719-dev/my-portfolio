@@ -158,6 +158,23 @@
     50% { transform: scale(1.05); box-shadow: 0 0 25px #00d2ff; }
     100% { transform: scale(1); box-shadow: 0 0 10px #00d2ff; }
 }
+     .pulse-animation {
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    box-shadow: 0 0 15px #25d366;
+    animation: whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
       }
    </style>
 </head>
@@ -165,7 +182,8 @@
   <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
   <h1 style="text-shadow: 2px 2px #ff0055, -2px -2px #00d2ff;">My Mission: Halal Freelancing & Security</h1>
   <img src="pro.jpg" alt="Mission Image">
-  <a href="https://wa.me/8801919540476?text=Assalaamu%27Alaikum%20Brother,%20I%20saw%20your%20portfolio!" 
+  <a href="https://wa.me/8801919540476?text=Assalaamu%27Alaikum%20Brother,%20I%20saw%20your%20portfolio!"
+    class="pulse-animation" 
    style="background-color: #25d366; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; display: inline-block; font-weight: bold; box-shadow: 0 0 15px #25d366; margin-top: 10px;" 
    target="_blank" 
    rel="noopener noreferrer">
@@ -189,6 +207,39 @@
         e.preventDefault();
         alert('Security Alert: Right-click is disabled to protect content!');
     });
+</script>
+  <script type="text/javascript">
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.onselectstart = () => false;
+    document.onmousedown = () => false;
+    document.styleSheets[0].insertRule('* { -webkit-user-select: none !important; }', 0);
+    document.addEventListener('keydown', e => {
+        if (
+            e.keyCode === 123 ||
+            (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83 || e.keyCode === 67 || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 75)) ||
+            (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67))
+        ) {
+            e.preventDefault();
+            window.location.replace("about:blank");
+            return false;
+        }
+    });
+    const _0x1a2b=["\x64\x65\x62\x75\x67\x67\x65\x72"];
+    setInterval(function(){
+        (function(){
+            try {
+                (function a(){
+                    if(typeof debugger !== 'undefined'){
+                        eval(_0x1a2b[0]);
+                    }
+                })();
+            } catch (e) {}
+        })();
+    }, 1);
+    setInterval(() => {
+        console.clear();
+        console.log("%cSECURITY ALERT: DO NOT ATTEMPT TO INSPECT!", "color: red; font-size: 40px; font-weight: bold; text-shadow: 2px 2px black;");
+    }, 100);
 </script>
 </body>
 </html>
